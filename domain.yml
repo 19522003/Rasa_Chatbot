@@ -1,0 +1,44 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - hate
+
+responses:
+  utter_greet:
+  - text: "Xin chào, tôi có thể giúp gì cho bạn không?"
+  - text: "Xin chào, tôi là bot"
+  - text: "Bạn cần giúp gì hả?"
+  - text: "Hello khỏe không anh bạn?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "No see you again"
+
+  utter_hate:
+  - text: "Sao bạn lại nói vậy"
+  - text: "Ừm, thì sao"
+  - text: "Mình nhịn bạn lâu rồi nhé"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
